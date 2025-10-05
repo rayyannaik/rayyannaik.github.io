@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Aluminium Sliding Window For Fabrication</h1>
+
+        <p>This project is based on the design and fabrication of a sliding window model. I made this project for a local fabrication shop to understand how mechanical drawings are converted into real-world structures.</p>
+
+        <img src="assets/works/project-3/project-3-cover.png" >
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>I started by measuring the frame dimensions and planning the sliding mechanism. Using AutoCAD, I created a 2D drawing with accurate frame personally visiting at local shop to get proper dimension and measurement shop owner wanted of rail, and panel details. Later using these drawings shop used during the actual fabrication process to cut and assemble the materials properly.</p>
+
+        <p>
+            Seeing the final product helped me understand how important precision is in drafting. Even small changes in measurements can affect the fitting and smooth movement of the window panels.
+        </p>
+
+        <img src="assets/works/project-3/project-3-projection.jpeg" >
+
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-3/project-3-preview.mp4" type="video/mp4">
+        </video>
+
+        <p>This project gave me practical experience in working with fabrication drawings and improved my confidence in preparing accurate plans for real aluminium manufacturing work.</p>
+
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+    <script>
+        fetch('footer-contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-contact-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

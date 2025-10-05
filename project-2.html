@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">3D Fan Blade Modelling</h1>
+
+        <p>This project focuses on creating a detailed 3D fan blade using AutoCAD. It helped me practice surface
+            modeling techniques and study how curvature and rotation affect the final design.
+        </p>
+
+        <img src="assets/works/project-2/project-2-cover.png">
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>I began by drawing the central hub and shaping one blade using curved profiles. After getting the right
+            shape, I used the array tool to repeat the blade evenly around the axis. Adjusting the blade angle and
+            thickness took a few tries until the model looked balanced and realistic.</p>
+
+        <p>
+            The finished design shows smooth surfaces, correct spacing, and symmetry among all the blades. I also
+            rendered the model to highlight the lighting and reflections, which makes the form easier to visualize.
+        </p>
+
+        <img src="assets/works/project-2/project-2-projection.jpeg">
+
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-2/project-2-preview.mp4" type="video/mp4">
+        </video>
+
+        <p>The final outcome was a production-ready model with detailed documentation. Through this project, I learned
+            how to create symmetrical parts, handle curved geometry, and maintain proportion while modeling in 3D.</p>
+
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+    <script>
+        fetch('footer-contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-contact-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

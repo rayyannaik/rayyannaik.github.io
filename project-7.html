@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Mini bench vice</h1>
+
+        <p>This project is a complete 3D model of a mini bench vice made to understand part modeling and assembly in mechanical design. I created each component separately including the base, fixed jaw, movable jaw, screw, and handle, and then combined them to form the full assembly.</p>
+
+        <img src="assets/works/project-7/project-7-cover.png" >
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>I started by modeling the main body with proper dimensions, then worked on the screw and handle that control the jaw movement and all other parts listed below one by one.</p>
+
+        <div class="work-grid">
+            <img src="assets/works/project-7/project-7-img-1.png" >
+            <img src="assets/works/project-7/project-7-img-2.png" >
+            <img src="assets/works/project-7/project-7-img-3.png" >
+            <img src="assets/works/project-7/project-7-img-4.png" >
+            <img src="assets/works/project-7/project-7-img-5.png" >
+            <img src="assets/works/project-7/project-7-img-6.png" >
+            <img src="assets/works/project-7/project-7-img-7.png" >
+            <img src="assets/works/project-7/project-7-img-8.png" >
+            <img src="assets/works/project-7/project-7-img-9.png" >
+            <img src="assets/works/project-7/project-7-img-10.png" >
+        </div>
+
+        <p>This project helped me learn how different parts fit and move together in a mechanical system. It improved my understanding of accuracy, alignment, and how 3D assemblies are built step by step. Seeing the final model come together smoothly was very satisfying and gave me a better idea of real workshop tools. You can check the final assembly preview of the Mini bench vice below.</p>
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-7/project-7-preview.mp4" type="video/mp4">
+        </video>
+
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+    <script>
+        fetch('footer-contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-contact-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Random Objects 3D Modelling</h1>
+
+        <p>This project is a collection of small 3D models that I created for practice and experimentation. It includes
+            fasteners, perfume and attar bottles, cap nuts, Allen screws, a hand gripper, and a simple mechanism.</p>
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>Each object was modeled in AutoCAD with attention to proportion and shape. I tried to mix mechanical and
+            everyday items to improve my technical accuracy and creative thinking. Some parts, like the fasteners and
+            screws, helped me focus on precision, while others, like the bottles and gripper, allowed me to explore
+            smooth curves and surface details.</p>
+
+        <div class="work-grid">
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-6/project-6-preview-1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-6/project-6-preview-2.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-6/project-6-preview-3.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-6/project-6-preview-4.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-6/project-6-preview-5.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-6/project-6-preview-6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+    <script>
+        fetch('footer-contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-contact-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

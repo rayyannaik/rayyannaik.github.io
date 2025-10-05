@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Modeling Diesel Engine Parts</h1>
+
+        <p>This project covers the 3D modeling of main diesel engine components like the connecting rod, piston, and engine block. The aim was to understand how each part is shaped, sized, and connected inside the engine assembly.</p>
+
+        <img src="assets/works/project-5/project-5-cover.png" >
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>I started with the connecting rod, focusing on its circular ends and smooth body shape. Getting the alignment and hole placement correct helped me learn precision and balance in desig</p>
+
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-5/project-5-preview-1.mp4" type="video/mp4">
+        </video>
+
+        <p>Next, I modeled the piston by creating the main body, grooves, and pin holes. It helped me study how the piston fits and moves with the connecting rod inside the cylinder.</p>
+        
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-5/project-5-preview-2.mp4" type="video/mp4">
+        </video>
+        
+        <p>Finally, I created the engine block, which was the most detailed part. I worked on the cylinder spaces and mounting areas to make sure all parts fit properly.</p>
+        
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-5/project-5-preview-3.mp4" type="video/mp4">
+        </video>
+
+        <p>This project gave me a clear idea of how engine components work together and improved my accuracy and 3D modeling confidence.</p>
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+    <script>
+        fetch('footer-contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-contact-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
