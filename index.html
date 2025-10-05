@@ -4,16 +4,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
+  <meta name="google-site-verification" content="pVUQkxbw6xY2m7XCfzEfiBDRxpOtVuCqN6anOG1F3LI" />
   <title>Rayyan Naik | CAD Draftsman</title>
-  <meta name="description" content="Rayyan Naik – CAD Draftsman and 3D Design Student Portfolio showcasing AutoCAD mechanical models, fabrication drawings, and 3D project works." />
-  <meta name="keywords" content="Rayyan Naik, CAD Draftsman, AutoCAD Student, Mechanical Design, 3D Modeling, Engineering Drawings, Fabrication Projects, CAD Portfolio, 3D Design Student" />
+  <meta name="description"
+    content="Rayyan Naik – CAD Draftsman and 3D Design Student Portfolio showcasing AutoCAD mechanical models, fabrication drawings, and 3D project works." />
+  <meta name="keywords"
+    content="Rayyan Naik, CAD Draftsman, AutoCAD Student, Mechanical Design, 3D Modeling, Engineering Drawings, Fabrication Projects, CAD Portfolio, 3D Design Student" />
   <meta name="author" content="Rayyan Naik" />
 
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <header id="hero" class="hero reveal">
@@ -34,7 +37,8 @@
       </p>
 
       <div class="hero-ctas">
-        <a class="btn primary" href="https://drive.google.com/file/d/1pP4qu3le42LJBlij_ueVZagy9HB0W0UL/view?usp=sharing" download>
+        <a class="btn primary" href="https://drive.google.com/file/d/1pP4qu3le42LJBlij_ueVZagy9HB0W0UL/view?usp=sharing"
+          target="_blank">
           <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
             <path fill="currentColor" d="M5 20h14v-2H5v2zM13 4h-2v6H8l4 4 4-4h-3V4z" />
           </svg>
@@ -65,7 +69,8 @@
             </div>
           </div>
           <h3 class="work-title">3D Helical Spring Modelling</h3>
-          <p class="work-desc">This project is a 3D model of a helical spring created in AutoCAD. I made this to practice 3D modeling tools and to understand how a spring is represented in mechanical design.</p>
+          <p class="work-desc">This project is a 3D model of a helical spring created in AutoCAD. I made this to
+            practice 3D modeling tools and to understand how a spring is represented in mechanical design.</p>
         </article>
       </a>
 
@@ -79,7 +84,8 @@
             </div>
           </div>
           <h3 class="work-title">3D Fan Blade Modelling</h3>
-          <p class="work-desc">This project focuses on creating a detailed 3D fan blade using AutoCAD. It helped me practice surface modeling techniques and study how curvature and rotation affect the final design.</p>
+          <p class="work-desc">This project focuses on creating a detailed 3D fan blade using AutoCAD. It helped me
+            practice surface modeling techniques and study how curvature and rotation affect the final design.</p>
         </article>
       </a>
 
@@ -93,7 +99,8 @@
             </div>
           </div>
           <h3 class="work-title">Aluminium Sliding Window For Fabrication</h3>
-          <p class="work-desc">I made this project for a local fabrication shop to understand how mechanical drawings are converted into real-world structures.</p>
+          <p class="work-desc">I made this project for a local fabrication shop to understand how mechanical drawings
+            are converted into real-world structures.</p>
         </article>
       </a>
 
@@ -107,7 +114,8 @@
             </div>
           </div>
           <h3 class="work-title">Spanner Modelling</h3>
-          <p class="work-desc">I made this project just out of curiosity. I saw a spanner at home and decided to model it in AutoCAD by taking real measurements using a Vernier caliper.</p>
+          <p class="work-desc">I made this project just out of curiosity. I saw a spanner at home and decided to model
+            it in AutoCAD by taking real measurements using a Vernier caliper.</p>
         </article>
       </a>
 
@@ -121,7 +129,8 @@
             </div>
           </div>
           <h3 class="work-title">Modeling Diesel Engine Parts</h3>
-          <p class="work-desc">The aim of this project was to understand how each part is shaped, sized, and connected inside the engine assembly.</p>
+          <p class="work-desc">The aim of this project was to understand how each part is shaped, sized, and connected
+            inside the engine assembly.</p>
         </article>
       </a>
 
@@ -135,7 +144,8 @@
             </div>
           </div>
           <h3 class="work-title">Random Objects 3D Modelling</h3>
-          <p class="work-desc">This project is a collection of small 3D models that I created for practice and experimentation.</p>
+          <p class="work-desc">This project is a collection of small 3D models that I created for practice and
+            experimentation.</p>
         </article>
       </a>
 
@@ -149,7 +159,8 @@
             </div>
           </div>
           <h3 class="work-title">Modeling Mini bench vice</h3>
-          <p class="work-desc">I created each component separately including the base, fixed jaw, movable jaw, screw, and handle, and then combined them to form the full assembly.</p>
+          <p class="work-desc">I created each component separately including the base, fixed jaw, movable jaw, screw,
+            and handle, and then combined them to form the full assembly.</p>
         </article>
       </a>
 
@@ -172,9 +183,20 @@
     fetch('footer-contact.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('footer-contact-placeholder').innerHTML = data;
+        const placeholder = document.getElementById('footer-contact-placeholder');
+        placeholder.innerHTML = data;
+
+        // Step 3: Attach Email button listener (only if using alert)
+        const emailBtn = placeholder.querySelector('.btn.primary:not([href])');
+        if (emailBtn) {
+          emailBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // prevents jumping
+            alert('📧 Email me at:\n nrayyaninaik@gmail.com');
+          });
+        }
       });
   </script>
+
 
   <script src="js/main.js"></script>
 </body>
