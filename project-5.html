@@ -60,13 +60,21 @@
 
     <div id="footer-contact-placeholder"></div>
 
-    <script>
-        fetch('footer-contact.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-contact-placeholder').innerHTML = data;
-            });
-    </script>
+  <script>
+    fetch('footer-contact.html')
+      .then(response => response.text())
+      .then(data => {
+        const placeholder = document.getElementById('footer-contact-placeholder');
+        placeholder.innerHTML = data;
+        const emailBtn = placeholder.querySelector('.btn.primary:not([href])');
+        if (emailBtn) {
+          emailBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('📧 Email me at:\n nrayyaninaik@gmail.com');
+          });
+        }
+      });
+  </script>
     <script src="js/main.js"></script>
 </body>
 

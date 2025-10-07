@@ -185,12 +185,10 @@
       .then(data => {
         const placeholder = document.getElementById('footer-contact-placeholder');
         placeholder.innerHTML = data;
-
-        // Step 3: Attach Email button listener (only if using alert)
         const emailBtn = placeholder.querySelector('.btn.primary:not([href])');
         if (emailBtn) {
           emailBtn.addEventListener('click', (e) => {
-            e.preventDefault(); // prevents jumping
+            e.preventDefault();
             alert('📧 Email me at:\n nrayyaninaik@gmail.com');
           });
         }
