@@ -189,6 +189,7 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
 }
 
 @media (max-width: 880px) {
