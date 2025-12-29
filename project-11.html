@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <a class="header-logo" href="https://rayyannaik.github.io/"><img src="favicon.png">
+            <h3>Rayyan Naik</h3>
+        </a>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Double Lug Link</h1>
+
+        <p>This project is a 3D model of a Double Lug Link designed and modeled using SolidWorks.
+           The objective of this project was to practice part modeling, accurate dimensioning,
+           and proper use of features commonly used in mechanical components.</p>
+
+        <img src="assets/works/project-11/project-11-cover.png">
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>The model was created by sketching the base profile and applying features such as
+           extrude, cut, fillet, and mirror to achieve the final shape.
+           Special attention was given to maintaining symmetry, correct hole alignment,
+           and standard mechanical proportions.</p>
+        <p>
+           The final model represents a clean and accurate Double Lug Link suitable for
+           assembly use and manufacturing reference.
+           Technical drawings were also prepared with proper dimensions and views.
+
+        <img src="assets/works/project-11/project-11-drawing.png">
+
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-11/project-11-preview.mp4" type="video/mp4">
+        </video>
+
+        <p>Through this project, I improved my SolidWorks skills in part modeling,
+           feature control, dimension accuracy, and preparing professional mechanical drawings.</p>
+
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+  <script>
+    fetch('footer-contact.html')
+      .then(response => response.text())
+      .then(data => {
+        const placeholder = document.getElementById('footer-contact-placeholder');
+        placeholder.innerHTML = data;
+        const emailBtn = placeholder.querySelector('.btn.primary:not([href])');
+        if (emailBtn) {
+          emailBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('📧 Email me at:\n nrayyaninaik@gmail.com');
+          });
+        }
+      });
+  </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
