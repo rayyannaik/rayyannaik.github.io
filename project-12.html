@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <a class="header-logo" href="https://rayyannaik.github.io/"><img src="favicon.png">
+            <h3>Rayyan Naik</h3>
+        </a>
+    </header>12
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Weldments & Structural Design</h1>
+
+        <p>This project showcases 3D modeling and structural assembly using SolidWorks Weldments. 
+           The focus was on creating precise industrial frameworks, including custom structural members, gusset plates, and bolted connections.</p>
+
+        <img src="assets/works/project-12/project-12-cover.png">
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>I started by designing a heavy-duty support arm using the Weldment toolset.
+           This involved defining custom path segments and applying structural profiles to ensure the arm could handle simulated loads while maintaining a clean, manufacturable design.</p>
+
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-12/project-12-preview 1.mp4" type="video/mp4">
+        </video>
+
+        <p>Finally, I developed a complex structural intersection featuring I-beams and reinforced gussets.
+           I focused on the alignment of mounting holes and the placement of hardware to ensure the assembly was both structurally sound and ready for real-world fabrication.</p>
+
+        <video autoplay muted loop playsinline width="100%">
+            <source src="assets/works/project-12/project-12-preview 2.mp4" type="video/mp4">
+        </video>
+
+        <p>This project significantly improved my understanding of structural member libraries, trim/extend features,
+           and how to manage large assemblies in a professional CAD environment..</p>
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+  <script>
+    fetch('footer-contact.html')
+      .then(response => response.text())
+      .then(data => {
+        const placeholder = document.getElementById('footer-contact-placeholder');
+        placeholder.innerHTML = data;
+        const emailBtn = placeholder.querySelector('.btn.primary:not([href])');
+        if (emailBtn) {
+          emailBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('📧 Email me at:\n nrayyaninaik@gmail.com');
+          });
+        }
+      });
+  </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

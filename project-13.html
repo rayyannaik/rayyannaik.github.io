@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="detail-header">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <a class="header-logo" href="https://rayyannaik.github.io/"><img src="favicon.png">
+            <h3>Rayyan Naik</h3>
+        </a>
+    </header>
+
+    <!-- Project Content -->
+    <main class="section reveal blog-style">
+
+        <h1 id="projectTitle">Sheet Metal Design & Fabrication</h1>
+
+        <p>This project showcases a series of sheet metal components designed for manufacturability. 
+           It features complex enclosures, fan guards, and mounting brackets, highlighting my 
+           ability to work with bend allowances, k-factors, and flat pattern exports.</p>
+
+        <br>
+        <h4 id="projectTitle">About Project</h4>
+
+        <p>Each component was modeled in SolidWorks using professional sheet metal tools. 
+           I focused on creating precise 3D geometries that can be seamlessly flattened for laser 
+           cutting and CNC folding. The previews below show the transition from the final 
+           formed state to the developed flat pattern, ensuring high accuracy for production.</p>
+
+        <div class="work-grid">
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-13/project-13-preview-1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-13/project-13-preview-2.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline width="100%">
+                <source src="assets/works/project-13/project-13-preview-3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </main>
+
+    <div id="footer-contact-placeholder"></div>
+
+  <script>
+    fetch('footer-contact.html')
+      .then(response => response.text())
+      .then(data => {
+        const placeholder = document.getElementById('footer-contact-placeholder');
+        placeholder.innerHTML = data;
+        const emailBtn = placeholder.querySelector('.btn.primary:not([href])');
+        if (emailBtn) {
+          emailBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('📧 Email me at:\n nrayyaninaik@gmail.com');
+          });
+        }
+      });
+  </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
